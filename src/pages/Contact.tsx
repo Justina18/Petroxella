@@ -7,6 +7,6 @@ export default function Contact(){
  return <><PageHero label="Contact" title="Talk to our team." crumb="Contact"/><Wrap className="py-14 grid lg:grid-cols-[1fr_1.3fr] gap-14">
   <div className="space-y-6"><div><p className="label text-amber">Head office</p><p>{contact.head}</p></div><div><p className="label text-amber">Branch office</p><p>{contact.branch}</p></div>
    <div><p className="label text-amber">Telephone</p>{contact.phones.map(p=><a key={p} href={`tel:${p}`} className="block font-mono hover:text-amber">{p}</a>)}</div>
-   <div><p className="label text-amber">Email</p><a href={`mailto:${contact.email}`} className="font-mono hover:text-amber">{contact.email}</a><p className="text-xs text-navy/50 mt-1">Provisional address, pending client confirmation.</p></div></div>
+   <div><p className="label text-amber">Email</p><a href={`mailto:${contact.email}`} className="font-mono hover:text-amber">{contact.email}</a></div></div>
   <ContactForm/></Wrap>
   <Wrap className="pb-16 grid md:grid-cols-2 gap-6"><Map title="Head office, Port Harcourt" addr={contact.head}/><Map title="Branch office, Kaduna" addr={contact.branch}/></Wrap></>}

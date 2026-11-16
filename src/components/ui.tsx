@@ -10,7 +10,7 @@ export function Counter({to,suffix=''}:{to:number;suffix?:string}){
  return <span ref={ref}>{n}{suffix}</span>}
 export function Img({src,alt,label,className='',dark=true}:{src?:string;alt:string;label:string;className?:string;dark?:boolean}){
  if(src)return <img src={src} alt={alt} loading="lazy" className={`object-cover w-full h-full ${className}`}/>;
- return <div role="img" aria-label={alt} className={`${dark?'bg-navy grid-bg text-white/50':'bg-slate50 grid-bg-light text-navy/50'} flex items-end p-3 ${className}`}><span className="label">Image placeholder: {label}</span></div>}
+ return <div role="img" aria-label={alt} className={`${dark?'bg-navy grid-bg text-white/50':'bg-slate50 grid-bg-light text-navy/50'} flex items-end p-3 ${className}`}><span className="label">{label}</span></div>}
 type BtnP={to?:string;href?:string;variant?:'primary'|'ghost'|'dark';children:ReactNode};
 export function Btn({to,href,variant='primary',children}:BtnP){
  const base='inline-flex items-center gap-2 px-5 py-3 font-head font-medium text-sm rounded transition-colors ';

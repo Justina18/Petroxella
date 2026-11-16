@@ -1,9 +1,10 @@
-export const nav=[{to:'/',label:'Home'},{to:'/about',label:'About'},{to:'/services',label:'Services'},{to:'/hse',label:'HSE & QA'},{to:'/projects',label:'Projects'},{to:'/contact',label:'Contact'}];
+export const nav=[{to:'/',label:'Home'},{to:'/about',label:'About'},{to:'/services',label:'Services'},{to:'/hse',label:'HSE & QA'},// {to:'/projects',label:'Projects'},
+{to:'/contact',label:'Contact'}];
 export const contact={
  head:'Plot 163b, Road 12, Federal Housing Estate (Agip Estate), Rumueme, Port Harcourt, Rivers State, Nigeria',
  branch:'No. 67 Usman Jikan Toro Street, Unguwan Dosa, Kaduna, Kaduna State, Nigeria',
  phones:['+2348091100233','+2348032846837','+2348035071951'],
- email:'info@petroxella.com', // provisional, pending client confirmation
+ email:'info@petroxella.com',
  whatsapp:'2348091100233'};
 export const rc='1144557';
 export interface Service{id:string;no:string;title:string;summary:string;items:string[];image:string}
@@ -18,10 +19,5 @@ export const stats=[{to:10,suffix:'+',label:'Years of experience'},{to:100,suffi
 export const compliance=['NCDMB','CASHES','SON','DPR'];
 export const localStd=['FMOE','SON','DPR'];
 export const intlStd=['APHA','ASTM','API','FAO','UNESCO','WHO','UNEP'];
-export interface Project{id:string;name:string;sector:string;location:string;description:string;image?:string;placeholder:boolean}
-// PLACEHOLDERS ONLY: replace with real case studies supplied by client.
-export const projects:Project[]=[
-{id:'sample-1',name:'Sample Project Name',sector:'Oil & Gas',location:'Location TBC',description:'Placeholder description. Real scope to be supplied by Petroxella.',image:'/petroxella-img/7.jpeg',placeholder:true},
-{id:'sample-2',name:'Sample Project Name',sector:'Logistics & Marine',location:'Location TBC',description:'Placeholder description. Real scope to be supplied by Petroxella.',image:'/petroxella-img/8.jpeg',placeholder:true},
-{id:'sample-3',name:'Sample Project Name',sector:'Environment & Civil',location:'Location TBC',description:'Placeholder description. Real scope to be supplied by Petroxella.',image:'/petroxella-img/9.jpeg',placeholder:true},
-{id:'sample-4',name:'Sample Project Name',sector:'Power & Renewables',location:'Location TBC',description:'Placeholder description. Real scope to be supplied by Petroxella.',image:'/petroxella-img/10.jpeg',placeholder:true}];
+export interface Project{id:string;name:string;sector:string;location:string;description:string;image?:string}
+export const projects:Project[]=[];
