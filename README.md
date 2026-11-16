@@ -1,6 +1,6 @@
 # Petroxella Energy Services Website
 
-A responsive company website for Petroxella Energy Services Limited, a Nigerian energy services company. It presents the company, its service areas, HSE and quality information, project portfolio, and contact options.
+A responsive company website for Petroxella Energy Services Limited, a African energy services company. It presents the company, its service areas, HSE and quality information, project portfolio, and contact options.
 
 ## Features
 

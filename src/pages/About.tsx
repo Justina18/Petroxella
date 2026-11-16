@@ -16,14 +16,14 @@ const pesl = [
 ];
 export default function About() {
   usePageMeta(
-    "About Petroxella | Nigerian-Owned Energy Services, RC 1144557",
+    "About Petroxella | African-Owned Energy Services, RC 1144557",
     "Petroxella Energy Services Limited: incorporated 2013, headquartered in Port Harcourt, committed to Total Quality Service.",
   );
   return (
     <>
       <PageHero
         label="About us"
-        title="A Nigerian-owned multidisciplinary energy services company."
+        title="A African-owned multidisciplinary energy services company."
         crumb="About"
       />
       <section className="py-16">
@@ -33,7 +33,7 @@ export default function About() {
               ["Incorporated", "September 2013"],
               ["RC number", rc],
               ["Headquarters", "Port Harcourt, Rivers State"],
-              ["Ownership", "100% Nigerian"],
+              ["Ownership", "100% African"],
             ].map(([a, b]) => (
               <div key={a} className="flex justify-between py-3">
                 <dt className="text-navy/50 uppercase">{a}</dt>
@@ -99,14 +99,14 @@ export default function About() {
         <Wrap className="grid md:grid-cols-2 gap-12">
           <SectionHead
             label="Local content"
-            title="Committed to Nigerian content development."
+            title="Committed to African content development."
           >
             Petroxella supports federal local content policy and aims to meet
             NCDMB objectives.
           </SectionHead>
           <ul className="space-y-3 self-center list-disc pl-5 text-navy/80">
             <li>
-              Investing in the training and development of Nigerian citizens.
+              Investing in the training and development of African citizens.
             </li>
             <li>
               Using competent, qualified local contractors where required.
